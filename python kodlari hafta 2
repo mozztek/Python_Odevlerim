@@ -3,3 +3,56 @@ isim = input("Adinizi giriniz: ")
 soyad = input("Soyadinizi giriniz: ")
 yasadigin_sehir = input("Hangi sehirde yasiyorsunuz?: ")
 print("Merhaba", isim, soyad, ",", yasadigin_sehir, "sehrinde yasamak eminim cok iyidir!")
+
+
+#2
+def indirim_hesaplama():
+    normal_fiyat = float(input("Urunun indirimsiz fiyati nedir?: "))
+    indirim_yuzdesi = float(input("Yuzde kac indirim uygulanacak?: "))
+    indirim_miktari = normal_fiyat * indirim_yuzdesi / 100
+    odenecek_tutar = normal_fiyat - indirim_miktari
+    print("Yapılan İndirim Tutarı:", indirim_miktari, "TL")
+    print("Kasada Odenecek Son Fiyat:", odenecek_tutar, "TL")
+print(indirim_hesaplama())
+
+
+# 3
+dogum_yili = int(input("Dogum yilinizi girin: "))
+guncel_yil = 2026
+yas = guncel_yil - dogum_yili
+print("Su anki yasiniz:", yas)
+if yas >= 18:
+    print("Harika! Yasin tutuyor, ehliyet alabilirsin.")
+else:
+    bekleme_suresi = 18 - yas
+    print("Ehliyet almak icin buyumen lazim bebekk,", bekleme_suresi, "yil daha beklemelisin hahahah.")
+
+
+#4
+def harf_notu_hesapla():
+    vize_notu = float(input("Vize notunuzu girin: "))
+    final_notu = float(input("Final notunuzu girin: "))
+    ortalama = (vize_notu * 0.4) + (final_notu * 0.6)
+    print("Donem sonu ortalamanız:", ortalama)
+    
+
+    if ortalama >= 90:
+        print("Harf Notunuz: AA")
+    elif ortalama >= 85:
+        print("Harf Notunuz: BA")
+    elif ortalama >= 80:
+        print("Harf Notunuz: BB")
+    elif ortalama >= 75:
+        print("Harf Notunuz: CB")
+    elif ortalama >= 70:
+        print("Harf Notunuz: CC")
+    elif ortalama >= 65:
+        print("Harf Notunuz: DC")
+    elif ortalama >= 60:
+        print("Harf Notunuz: DD - Sinirdan gectin :)")
+    elif ortalama >= 50:
+        print("Harf Notunuz: FD")
+    else:
+        print("Harf Notunuz: FF - KALDIN.")
+
+print(harf_notu_hesapla())
