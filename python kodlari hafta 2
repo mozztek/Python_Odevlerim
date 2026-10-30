@@ -1,0 +1,5 @@
+#1
+isim = input("Adinizi giriniz: ")
+soyad = input("Soyadinizi giriniz: ")
+yasadigin_sehir = input("Hangi sehirde yasiyorsunuz?: ")
+print("Merhaba", isim, soyad, ",", yasadigin_sehir, "sehrinde yasamak eminim cok iyidir!")
